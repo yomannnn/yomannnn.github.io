@@ -3,6 +3,11 @@
 
 #show: book
 
+/*
+
+https://github.com/Myriad-Dreamin/shiroa/blob/main/.github/workflows/gh_pages.yml
+*/
+
 #book-meta(
   title: "YoMannnn Homepage",
   description: "Documentation of small projects",
@@ -10,14 +15,13 @@
   // authors: ("Myriad-Dreamin", "7mile"),
   language: "en",
   summary: [
-    #prefix-chapter("hello.typ")[Hello]
+    - #prefix-chapter("0-introduction.typ")[Introduction]
+    = Drums
+    - #chapter("1-drums.typ", section: "1")[Drums]
     = Projects
-    #prefix-chapter("sample-page.typ")[Hello, typst]
-    - #chapter("projects.typ", section: "1")[My Projects]
-    = Bla
-    - #chapter("projects.typ", section: "1")[My Projects]
+    - #chapter("2-projects.typ", section: "1")[My Projects]
     = Blup
-    - #chapter("projects.typ", section: "1")[My Projects]
+    - #chapter("2-projects.typ", section: "1")[My Projects]
   ]
 )
 
