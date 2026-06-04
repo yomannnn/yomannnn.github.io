@@ -1,5 +1,5 @@
 
-#import "@preview/book:0.2.2": *
+#import "@preview/shiroa:0.3.1": *
 
 #show: book
 
@@ -12,30 +12,16 @@
   summary: [
     #prefix-chapter("hello.typ")[Hello]
     = Projects
+    #prefix-chapter("sample-page.typ")[Hello, typst]
     - #chapter("projects.typ", section: "1")[My Projects]
     = Bla
+    - #chapter("projects.typ", section: "1")[My Projects]
     = Blup
+    - #chapter("projects.typ", section: "1")[My Projects]
   ]
 )
 
-/*
-  summary: [ // begin of summary
-    #prefix-chapter("introduction.typ")[Introduction]
-    = User Guide
-    - #chapter("guide/installation.typ", section: "1")[Installation]
-    - #chapter("guide/get-started.typ", section: "2")[Get Started]
-    - #chapter("guide/faq.typ", section: "3")[Frequently Asked Questions]
-    - #chapter(none, section: "4")[Further reading]
-    = Reference Guide
-    - #chapter("cli/main.typ", section: "5")[Command Line Tool]
-      - #chapter("cli/init.typ", section: "5.1")[init]
-*/
 
-
-#build-meta(
-  // dest-dir: "../dist2",   One Folder Up
-  dest-dir: "./docs",
-)
 
 // re-export page template
 #import "/templates/page.typ": project

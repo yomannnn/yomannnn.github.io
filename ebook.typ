@@ -1,4 +1,4 @@
-#import "@preview/book:0.2.2": *
+#import "@preview/shiroa:0.3.1": *
 
 #import "/templates/ebook.typ"
 
